@@ -75,7 +75,7 @@ public class NewClass {
                         
                         //Passport Number
                         
-                         driver.findElement(By.id("mat-input-4")).sendKeys("BN977044");
+                         driver.findElement(By.id("mat-input-4")).sendKeys("BN9770434");
                          
                          // Passport Date picker
                         driver.findElement(By.xpath("//*[@id=\"passportExpirtyDate\"]")).sendKeys("02012022");
@@ -86,10 +86,10 @@ public class NewClass {
                          driver.findElement(By.id("mat-input-5")).sendKeys("44");
                          
                          //Mobile Number
-                         driver.findElement(By.id("mat-input-6")).sendKeys("01685370455");
+                         driver.findElement(By.id("mat-input-6")).sendKeys("01685370456");
                          
                          //Email
-                         driver.findElement(By.id("mat-input-7")).sendKeys("kiddykayes@gmail.com");
+                         driver.findElement(By.id("mat-input-7")).sendKeys("kiddy1kayes@gmail.com");
                          
                          //Address 1
                          driver.findElement(By.id("mat-input-8")).sendKeys("Road 1 Basundhara Dhaka");
@@ -119,7 +119,8 @@ public class NewClass {
                         
                         Thread.sleep(5000);
                         
-                        driver.findElement(By.cssSelector("date-availiable")).click();
+                        driver.findElement(By.
+                                cssSelector("body > app-root > div > app-book-appointment > section > mat-card:nth-child(1) > div.ba-calender-card.card.shadow-sm > div > div > full-calendar > div.fc-view-harness.fc-view-harness-active > div > table > tbody > tr > td > div > div > div > table > tbody > tr:nth-child(5) > td.fc-daygrid-day.fc-day.fc-day-tue.fc-day-future.date-availiable")).click();
                         
                         Thread.sleep(5000);
                         
@@ -132,6 +133,18 @@ public class NewClass {
                         
                         Thread.sleep(5000);
                         driver.findElement(By.xpath("/html/body/app-root/div/app-book-appointment/section/mat-card[2]/div/div[2]/button")).click();
+                        
+                        Thread.sleep(5000);
+                        driver.findElement(By.xpath("/html/body/app-root/div/app-manage-service/section/mat-card[2]/div/div[2]/button")).click();
+                        Thread.sleep(4000);
+                        driver.findElement(By.xpath("//*[@id=\"mat-checkbox-1\"]/label/span[1]")).click();
+                        driver.findElement(By.xpath("//*[@id=\"mat-checkbox-2\"]/label/span[1]")).click();
+                        
+                        Thread.sleep(5000);
+                        driver.findElement(By.xpath("/html/body/app-root/div/app-review-and-payment/section/form/mat-card[2]/div/div[2]/button")).clear();
+                        
+                                
+                                
                         
                         
                         
