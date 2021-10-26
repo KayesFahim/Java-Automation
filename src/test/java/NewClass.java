@@ -16,7 +16,7 @@ public class NewClass {
     public static void main(String[] args) throws InterruptedException {
         
         System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\Hp\\Downloads\\chromedriver_win32\\chromedriver.exe");
+                "chromedriver.exe");
 			ChromeDriver driver = new ChromeDriver();
                         NgWebDriver ngWebDriver = new NgWebDriver(driver);
                         ngWebDriver.waitForAngularRequestsToFinish();
@@ -33,9 +33,11 @@ public class NewClass {
                         driver.findElement(By.id("mat-input-1")).sendKeys("@Fahim123");
                         
                         
+                        Thread.sleep(5000);                      
+                        
                         driver.findElement(By.xpath("/html/body/app-root/div/app-login/section/div/div/mat-card/form/button")).click();
                         
-                        Thread.sleep(5000);
+                        Thread.sleep(8000);
                         driver.findElement(By.xpath("/html/body/app-root/div/app-dashboard/section/div/div[2]/button")).click();
                         
                         Thread.sleep(5000);
